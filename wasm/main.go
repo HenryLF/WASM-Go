@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	js.Global().Set("PublicFunc", PublicFunc)
+	js.Global().Set("PublicFunc", js.FuncOf(PublicFunc))
 	ch := make(chan bool)
 	<-ch
 }

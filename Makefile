@@ -1,5 +1,5 @@
 build :
-	GOOS=js GOARCH=wasm go build -C ./wasm -o ../app.wasm .
+	GOOS=js GOARCH=wasm go build -C ./wasm -o ../deployement/app.wasm .
 
 push :
 	git add .
